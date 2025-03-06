@@ -42,7 +42,7 @@ public class SebastianOlssonsSnake extends Applet implements Runnable
     {
         ormlangdPL = 20;
         ormlangdPL2 = 20;
-//        ormlangdAI = 20;
+        ormlangdAI = 20;
         amoebaPLX = 1;
         amoebaPLY = 0;
         amoebaPL2X = 1;
@@ -493,7 +493,7 @@ public class SebastianOlssonsSnake extends Applet implements Runnable
         {
             spelare();
             spelare2();
-//            AI();
+            AI();
             repaint();
             try
             {
