@@ -1,6 +1,10 @@
 Sebastian Olsson's Snake
 =====
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5e42d276-fc1d-40c5-b3ef-6b3671f00b8e" />
+</p>
+
 Created this game as a project in the subject Programmering B in upper secondary school, Fall 2008.
 
 Usage
