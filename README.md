@@ -15,3 +15,42 @@ jdk_path=/usr/lib/jvm/java-8-openjdk
 "$jdk_path/bin/javac" *.java
 "$jdk_path/bin/appletviewer" Index.htm
 ```
+
+Gameplay
+=====
+
+I created two modes for this game:
+
+* 2-player mode: Player 1 uses the arrow keys. Player 2 uses WASD.
+* 3-player mode: There is a third AI-controlled snake.
+
+3-player mode is the default. To switch to 2-player mode,
+remove or comment out lines `496` and `45` in `SebastianOlssonsSnake.java`,
+then recompile:
+
+```diff
+--- a/SebastianOlssonsSnake.java
++++ b/SebastianOlssonsSnake.java
+@@ -42,7 +42,6 @@ public class SebastianOlssonsSnake extends Applet implements Runnable
+     {
+         ormlangdPL = 20;
+         ormlangdPL2 = 20;
+-        ormlangdAI = 20;
+         amoebaPLX = 1;
+         amoebaPLY = 0;
+         amoebaPL2X = 1;
+@@ -493,7 +492,6 @@ public class SebastianOlssonsSnake extends Applet implements Runnable
+         {
+             spelare();
+             spelare2();
+-            AI();
+             repaint();
+             try
+             {
+```
+
+and then recompile:
+
+```bash
+"$jdk_path/bin/javac" *.java
+```
